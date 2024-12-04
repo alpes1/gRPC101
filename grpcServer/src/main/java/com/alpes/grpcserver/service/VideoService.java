@@ -11,6 +11,8 @@ import net.devh.boot.grpc.server.service.GrpcService;
 public class VideoService extends VideoServiceGrpc.VideoServiceImplBase{
     @Override
     public void uploadVideo(UploadVideoRequest request, StreamObserver<Video> responseObserver) {
+
+
         // Simuler une vidéo
         Video video = Video.newBuilder()
                 .setId("12345")
